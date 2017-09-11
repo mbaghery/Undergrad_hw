@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <math.h>
 
-#define N 40 // Number of particles
-#define L 10 // Length of the box
+#define N 40      // Number of particles
+#define L 10      // Length of the box
 #define equilT 10 // Equilibrium temprature
 
 double

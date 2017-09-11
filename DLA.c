@@ -45,25 +45,25 @@ int main()
         }
       }
 
-      // --- random walking
+      // --- random walke
       randWalk = ((float)rand()) / ((float)RAND_MAX);
 
-      if (randWalk < 0.25) // Moving right
+      if (randWalk < 0.25) // Move right
         if (site[x + 1][y] != 0)
           x--;
         else
           x++;
-      else if (randWalk >= 0.25 && randWalk < 0.5) // Moving up
+      else if (randWalk >= 0.25 && randWalk < 0.5) // Move up
         if (site[x][y + 1] != 0)
           y--;
         else
           y++;
-      else if (randWalk >= 0.5 && randWalk < 0.75) // Moving left
+      else if (randWalk >= 0.5 && randWalk < 0.75) // Move left
         if (site[x - 1][y] != 0)
           x++;
         else
           x--;
-      else if (randWalk >= 0.75 && randWalk <= 1) // Moving down
+      else if (randWalk >= 0.75 && randWalk <= 1) // Move down
         if (site[x][y - 1] != 0)
           y++;
         else
@@ -71,7 +71,7 @@ int main()
     }
   }
 
-  // --- printing the result to file
+  // --- print the results to file
   for (i = 0; i < L; i++)
     for (j = 0; j < L; j++)
       if (site[i][j] == 1)
